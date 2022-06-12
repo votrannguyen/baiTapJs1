@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to display an alert box.</p>
+
+    <button onclick=" notify()">Try it</button>
+    <script>
+
+        function notify() {
+        
+           alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
+           let name = prompt("Please enter your name");
+            document.getElementById('name').innerHTML = name;
+            let city = prompt("Please enter your city");
+            document.getElementById('city').innerHTML = city;
+            let mobile = prompt("Please enter your mobile");
+            document.getElementById('mobile').innerHTML = mobile;
+
+            let age = prompt("Please enter your age");
+            while(age>=2022){
+                age = prompt("Please enter your age");
+                
+            }
+            document.getElementById('age').innerHTML = age;
+            let button = document.getElementById('button');
+            button.style.display = 'block';
+        }
+        
+        </script>
+    <p id="name" style="font-weight:bold"></p>
+    <p id="city" style="font-weight:bold"></p>
+    <p id="mobile" style="font-weight:bold"></p>
+    <p id="age" style="font-weight:bold"></p>
+    <div style="display: none;" id="button">
+        <button>Bước tiếp theo</button>
+    </div>
+</body>
+</html>
